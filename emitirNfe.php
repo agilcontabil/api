@@ -1,8 +1,8 @@
 <?php
 $urlIntegracao    = 'http://api.agilcontabil.net/nfe/emitirNfe';
 
-$dados['usuario']      = 'teste';
-$dados['senha']        = 'teste';
+$dados['usuario'] = 'teste';
+$dados['senha']   = 'teste';
 
 $dados["nfe"] = bin2hex(json_encode(
     array(
