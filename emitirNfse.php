@@ -5,7 +5,6 @@ $urlIntegracao    = 'http://api.agilcontabil.net/nfse/emitirNfse';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 
-
 //dados da nota fiscal de serviços
 $nfse = [
     "numeroNfse" => "1846",
