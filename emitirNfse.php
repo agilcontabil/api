@@ -1,4 +1,5 @@
 <?php
+die("alooooohaaaa");
 $urlIntegracao    = 'http://api.agilcontabil.net/nfse/emitirNfse';
 
 $dados['usuario'] = 'teste';
