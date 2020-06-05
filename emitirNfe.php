@@ -4,6 +4,9 @@ $urlIntegracao    = 'http://api.agilcontabil.net/nfe/emitirNfe';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 
+$dados['certificadoDigial'] = bin2hex(file_get_contents("1234.pfx"));
+$dados['senhaCertificadoDigial'] = '12345';
+
 $dados["nfe"] = bin2hex(json_encode(
     array(
         'transportador' =>
