@@ -4,8 +4,8 @@ $urlIntegracao    = 'http://api.agilcontabil.net/nfe/emitirNfe';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 
-//$dados['certificadoDigial'] = bin2hex(file_get_contents("C:\Users\billb\Downloads\hellen.pfx"));
-//$dados['senhaCertificadoDigial'] = '23101981';
+$dados['certificadoDigial'] = bin2hex(file_get_contents("C:\Users\billb\Downloads\hellen.pfx"));
+$dados['senhaCertificadoDigial'] = '23101981';
 
 $dados["nfe"] = bin2hex(json_encode(
     array(
@@ -291,7 +291,7 @@ $dados["nfe"] = bin2hex(json_encode(
         'pastaXml' => 'arquivosClientes/20/39678831569137928',
         'logomarcaEmitente' => 'logomaraGrande.jpg',
         'idVenda' => '0',
-        'numeroNotaEmitir' => '54',
+        'numeroNotaEmitir' => '53',
     )
 ));
 
