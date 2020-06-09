@@ -288,7 +288,6 @@ $dados["nfe"] = bin2hex(json_encode(
         'fatura' =>
         array(),
         'codigoTabelaIbpt' => 'ca7gi3',
-        'pastaXml' => 'arquivosClientes/20/39678831569137928',
         'logomarcaEmitente' => 'logomaraGrande.jpg',
         'idVenda' => '0',
         'numeroNotaEmitir' => '48',
