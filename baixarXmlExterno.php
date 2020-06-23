@@ -1,11 +1,11 @@
 <?php
-$urlIntegracao    = 'http://api.agilcontabil.net/nfe/baixarXmlExterno';
+$urlIntegracao    = 'https://api.agilcontabil.net/nfe/baixarXmlExterno';
 
-$dados['usuario'] = 'croques@criarsistemas.net';
-$dados['senha']   = 'D2014info5';
+$dados['usuario'] = 'teste';
+$dados['senha']   = 'teste';
 $dados["dados"] = bin2hex(json_encode([
-    "cnpj" => "02007384000108",
-    "dataInicio" => "19/03/2020"
+    "cnpj" => "22933068000166",
+    "dataInicio" => "01/01/2020"
 ]));
 
 //Inicia comunicação com servidor agilcontabil.net
