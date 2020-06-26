@@ -9,6 +9,9 @@ $dados['senhaCertificadoDigital'] = '23101981';
 $dados['idCsc'] = '00001';
 $dados['csc'] = '234134234124123423412344123';
 
+//a chave ["cliente"] pode ser totalmente removida caso não haja cliente na nota
+//ou pode ser informado apenas o CPF ou apenas nome e CPF se desejar
+
 $dados["nfe"] = bin2hex(json_encode(
     array(
         'empresa' =>
