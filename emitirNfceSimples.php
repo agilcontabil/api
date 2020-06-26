@@ -6,8 +6,6 @@ $dados['senha']   = 'teste';
 
 $dados['certificadoDigital'] = bin2hex(file_get_contents("C:\Users\billb\Downloads\hellen.pfx"));
 $dados['senhaCertificadoDigital'] = '23101981';
-$dados['idCsc'] = '00001';
-$dados['csc'] = '234134234124123423412344123';
 
 //a chave ["cliente"] pode ser totalmente removida caso não haja cliente na nota
 //ou pode ser informado apenas o CPF ou apenas nome e CPF se desejar
@@ -25,8 +23,8 @@ $dados["nfe"] = bin2hex(json_encode(
             'uf' => 'TO',
             'tipoAtividade' => '3',
             'serie' => '2',
-            'idCodigoSegurancaContribuinte' => '',
-            'codigoSegurancaContribuinte' => '',
+            'idCodigoSegurancaContribuinte' => '00001',
+            'codigoSegurancaContribuinte' => '234134234124123423412344123',
             'contingencia' => 'nao',
             'razaoSocial' => 'HELLEN CONFECCOES LTDA',
             'nomeFantasia' => 'HELLEN CONFECCOES',
