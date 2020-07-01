@@ -1,16 +1,18 @@
 <?php
 $urlIntegracao    = 'http://api.agilcontabil.net/nfe/cartaCorrecaoNfe';
 
-$dados['usuario']      = 'teste';
-$dados['senha']        = 'teste';
+$dados['usuario']            = 'teste';
+$dados['senha']              = 'teste';
+//para usar certificado A1 apenas descomentar os dados abaixo
+$dados['certificadoDigital'] = bin2hex(file_get_contents("./certificado.pfx"));
+$dados['senhaCertificadoDigital'] = '1234';
 
 $dados["dados"] = bin2hex(json_encode([
-    "ambiente" => "2",
+    "razaoSocial" => "Sottile",
+    "ambiente" => "1",
     "modelo" => "55",
-    "ufEmitente" => "TO",
-    "idCsc" => "",
-    "csc" => "",
-    "chave" => "17200526888917000168550020000000471817994435",
+    "ufEmitente" => "GO",
+    "chave" => "52200716890284000179650100000001031491472119",
     "numeroCorrecao" => "1",
     "textoCorrecao" => "Alteração de dados: CSOSN 1102 para CSOSN 1103 e CFOP 5102 para o CFOP 5405."
 ]));

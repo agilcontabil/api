@@ -1,17 +1,19 @@
 <?php
 $urlIntegracao    = 'http://api.agilcontabil.net/nfe/cancelarNfe';
 
-$dados['usuario']      = 'teste';
-$dados['senha']        = 'teste';
+$dados['usuario']            = 'teste';
+$dados['senha']              = 'teste';
+//para usar certificado A1 apenas descomentar os dados abaixo
+$dados['certificadoDigital'] = bin2hex(file_get_contents("./certificado.pfx"));
+$dados['senhaCertificadoDigital'] = '12345';
 
 $dados["dados"] = bin2hex(json_encode([
-    "ambiente" => "2",
-    "modelo" => "55",
-    "ufEmitente" => "TO",
-    "idCsc" => "",
-    "csc" => "",
-    "chave" => "17200526888917000168550020000000471817994435",
-    "protocolo" => "317200000005036",
+    "razaoSocial" => "Sottile",
+    "ambiente" => "1",
+    "modelo" => "65",
+    "ufEmitente" => "GO",
+    "chave" => "52200716890284000179650100000001031491472119",
+    "protocolo" => "152203235576728",
     "justificativa" => "Nota fiscal emitida com erro nos valores"
 ]));
 
