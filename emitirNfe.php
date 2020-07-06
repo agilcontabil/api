@@ -135,6 +135,10 @@ $dados["nfe"] = bin2hex(json_encode(
                 "email" => "billbarschgmail.com"
             ]
         ),
+        'autorizadosXml' => [
+            0 => ["cnpj" => '26888917000168'],
+            1 => ["cpf" => "00863364101"]
+        ],
         'numero' => '',
         'codigoNumerico' => '49028638',
         'dataSaida' => '2020-05-13 17:23:56',
