@@ -11,7 +11,7 @@ $dados['senhaCertificadoDigital'] = '23101981';
 $dados["dados"] = bin2hex(json_encode([
     "cnpj" => "26888917000168",
     //"dataInicio" => "01/01/2020"
-    "ultimoNsu" => "7436"
+    "ultimoNsu" => "7400"
 ]));
 
 //Inicia comunicação com servidor agilcontabil.net
