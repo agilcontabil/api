@@ -308,7 +308,29 @@ $dados["nfe"] = bin2hex(json_encode(
             ),
         ),
         'fatura' =>
-        array(),
+        array(
+            'numero' => '1',
+            'valor' => '213.50',
+            'desconto' => '0',
+            'valorLiquido' => '213.50',
+            'duplicatas' =>
+            array(
+                0 =>
+                array(
+                    'numero' => '1-1',
+                    'dataVencimento' => '2020-07-31',
+                    'valor' => '20.00',
+                    'codigoPagamento' => '01',
+                ),
+                1 =>
+                array(
+                    'numero' => '1-2',
+                    'dataVencimento' => '2020-09-25',
+                    'valor' => '193.50',
+                    'codigoPagamento' => '01',
+                ),
+            ),
+        ),
         'codigoTabelaIbpt' => 'ca7gi3',
         'logomarcaEmitente' => 'logomaraGrande.jpg',
         'idVenda' => '0',
