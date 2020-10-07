@@ -257,6 +257,29 @@ $dados["nfe"] = bin2hex(json_encode(
                 ),
             ),
         ),
+        'pagamento' => array(
+            'troco' => 0.00,
+            'detalhamento' => array(
+                0 => array(
+                    'tipo' => '03', //01=Dinheiro | 02=Cheque | 03=Cartão de Crédito | 04=Cartão de Débito | 05=Crédito Loja | 10=Vale Alimentação | 11=Vale Refeição | 12=Vale Presente | 13=Vale Combustível | 14=Duplicata Mercantil | 15=Boleto Bancário | 90=Sem Pagamento | 99=Outros
+                    'valor' => 10.00,
+                    'cnpjCredenciadora ' => '05577343000137',
+                    'tipoBandeira' => '02', //01=Visa | 02=Mastercard | 03=American Express | 04=Sorocred | 05=Diners Club | 06=Elo | 07=Hipercard | 08=Aura | 09=Cabal | 99=Outros
+                    'autorizacao' => '20010afsct',
+                    'tipoIntegracao' => '2', //1 - integrado (TEF) | 2 - não integrado (POS)
+                    'indicadorPagamento' => '0', // 0=Pagamento à Vista | 1=Pagamento à Prazo
+                ),
+                1 => array(
+                    'tipo' => '03', //01=Dinheiro | 02=Cheque | 03=Cartão de Crédito | 04=Cartão de Débito | 05=Crédito Loja | 10=Vale Alimentação | 11=Vale Refeição | 12=Vale Presente | 13=Vale Combustível | 14=Duplicata Mercantil | 15=Boleto Bancário | 90=Sem Pagamento | 99=Outros
+                    'valor' => 10.00,
+                    'cnpjCredenciadora ' => '31551765000143',
+                    'tipoBandeira' => '01', //01=Visa | 02=Mastercard | 03=American Express | 04=Sorocred | 05=Diners Club | 06=Elo | 07=Hipercard | 08=Aura | 09=Cabal | 99=Outros
+                    'autorizacao' => 'akkakaj87272727',
+                    'tipoIntegracao' => '2', //1 - integrado (TEF) | 2 - não integrado (POS)
+                    'indicadorPagamento' => '0', // 0=Pagamento à Vista | 1=Pagamento à Prazo
+                )
+            )
+        ),
         'codigoTabelaIbpt' => 'ca7gi3',
         'logomarcaEmitente' => 'logomaraGrande.jpg',
         'idVenda' => '0',
