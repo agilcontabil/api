@@ -4,14 +4,15 @@ $urlIntegracao    = 'http://www.agilcontabil.net/sistemaInstalado/ajax';
 $dados['usuario']      = 'teste';
 $dados['senha']        = 'teste';
 $dados['acao']         = 'emitirNfseSaoPauloA1';
-$dados['certificado']  = bin2hex(file_get_contents('zz-certificadoNOVANDI.p12'));
-$dados['senhaCertificado'] = "teste";
+//$dados['certificado']  = bin2hex(file_get_contents('/var/www/agilcontabil/modulos/api/zz-certificadoNOVANDI.p12'));
+$dados['certificado']  = bin2hex(file_get_contents('D:\laragon\www\maisagil\public\modulos\api\zz-certificadoNOVANDI.p12'));
+$dados['senhaCertificado'] = "YJKmaa1894KLT";
 
 //iniício da emissão
 //dados da nota fiscal de serviços
 $nfse = [
-  "numeroNfse" => "1",
-  "numeroLote" => "1",
+  "numeroNfse" => "5",
+  "numeroLote" => "5",
   "serie" => "NF",
   "ambiente" => "1", //1=produção, 2=homologação
   "simplesNacional" => "1", //1=sim, 2=não
@@ -67,18 +68,18 @@ $nfse = [
     "codigoUf"           => "35"
   ],
   "tomador" => [
-    "cpfCnpj"            => "00863364101",
+    "cpfCnpj"            => "09356343802",
     "inscricaoMunicipal" => "",
-    "endereco"           => "RUA HEXEL",
-    "numero"             => "351",
-    "complemento"        => "",
-    "bairro"             => "teste",
+    "endereco"           => "Rua Bonifacio",
+    "numero"             => "169",
+    "complemento"        => "Ap 141 Bl 2",
+    "bairro"             => "Butanta",
     "municipio"          => "3550308",
     "uf"                 => "SP",
-    "cep"                => "99010112",
-    "razaoSocial"        => "Bill Barsch",
-    "telefone"           => "3423452345",
-    "email"              => ""
+    "cep"                => "05529060",
+    "razaoSocial"        => "Marcos Araujo Andrade",
+    "telefone"           => "11994855686",
+    "email"              => "marcos@novandi.com.br"
   ]
 ];
 

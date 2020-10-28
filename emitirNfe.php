@@ -143,6 +143,7 @@ $dados["nfe"] = bin2hex(json_encode(
         'codigoNumerico' => '49028638',
         'dataSaida' => '2020-05-13 17:23:56',
         'dataEmissao' => '2020-05-13 17:23:56',
+        'fusoHorario' => '-03:00',
         'modelo' => '55',
         'chave' => '',
         'protocolo' => '',
