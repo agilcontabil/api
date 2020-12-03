@@ -9,6 +9,7 @@ $dados['senhaCertificadoDigital'] = '1234';
 
 $dados["dados"] = bin2hex(json_encode([
     "razaoSocial" => "Sottile",
+    "cnpj" => "43454545456556",
     "ambiente" => "1",
     "modelo" => "55",
     "ufEmitente" => "GO",
