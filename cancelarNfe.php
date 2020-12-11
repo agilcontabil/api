@@ -8,12 +8,13 @@ $dados['certificadoDigital'] = bin2hex(file_get_contents("./certificado.pfx"));
 $dados['senhaCertificadoDigital'] = '12345';
 
 $dados["dados"] = bin2hex(json_encode([
-    "razaoSocial" => "Sottile",
-    "ambiente" => "1",
-    "modelo" => "65",
-    "ufEmitente" => "GO",
-    "chave" => "52200716890284000179650100000001031491472119",
-    "protocolo" => "152203235576728",
+    "razaoSocial" => "Empresa Teste",
+    "cnpj" => "26888917000168",
+    "ambiente" => "2",
+    "modelo" => "55",
+    "ufEmitente" => "TO",
+    "chave" => "17201226888917000168550020000000811304435046",
+    "protocolo" => "317200000030770",
     "justificativa" => "Nota fiscal emitida com erro nos valores"
 ]));
 
