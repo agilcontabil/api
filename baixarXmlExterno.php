@@ -10,7 +10,7 @@ $dados['senha']   = 'teste';
 //"dataInicio" => "01/01/2020"
 $dados["dados"] = bin2hex(json_encode([
     "cnpj" => "26888917000168",
-    "ultimoNsu" => "7400"
+    "ultimoNsu" => "8210"
 ]));
 
 //Inicia comunicação com servidor agilcontabil.net
