@@ -68,7 +68,6 @@ $dados["nfe"] = bin2hex(json_encode(
         'notaFiscalReferencia' => '',
         'naturezaOperacao' => 'Venda de Produtos ou Servicos',
         'numeroVenda' => '',
-        'tipoPagamento' => '99',
         'itens' =>
         array(
             0 =>

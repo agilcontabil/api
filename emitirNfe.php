@@ -157,7 +157,6 @@ $dados["nfe"] = bin2hex(json_encode(
         'idNaturezaOperacao' => '1',
         'naturezaOperacao' => 'Venda de Produtos ou Servicos',
         'numeroVenda' => '',
-        'tipoPagamento' => '99',
         'usarValorTotalInformado' => '',
         'valorTotal' => '20.00',
         'itens' =>
