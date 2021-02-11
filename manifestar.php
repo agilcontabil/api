@@ -3,7 +3,7 @@ $urlIntegracao    = 'http://api.agilcontabil.net/nfe/manifestar';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 //para usar certificado A1 apenas descomentar os dados abaixo
-$dados['certificadoDigital'] = bin2hex(file_get_contents("D:\\laragon\\www\\maisagil\\public\\modulos\\api\\39678831569137928.pfx"));
+$dados['certificadoDigital'] = bin2hex(file_get_contents("modulos/api/cert-hellen.pfx"));
 $dados['senhaCertificadoDigital'] = '23101981';
 
 $dados["dados"] = bin2hex(json_encode([
