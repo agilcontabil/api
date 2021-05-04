@@ -55,7 +55,7 @@ $dados["nfe"] = bin2hex(json_encode(
             'nomeFantasia' => '',
             'cep' => '77818120'
         ),
-        'indicadorIntermediador' => '0',
+        'indicativoIntermediador' => '0',
         'numeroNotaEmitir' => '55',
         'codigoNumerico' => '68158475',
         'dataSaida' => '2020-06-05 01:38:17',
