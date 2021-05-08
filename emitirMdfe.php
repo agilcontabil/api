@@ -211,7 +211,6 @@ $dados["mdfe"] = bin2hex(
             'fatura' =>
             array(),
             'codigoTabelaIbpt' => 'ca7gi3',
-            'logomarcaEmitente' => 'logomaraGrande.jpg',
             'idVenda' => '',
             'numeroNotaEmitir' => '1',
             'percursos' =>

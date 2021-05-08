@@ -282,7 +282,6 @@ $dados["nfe"] = bin2hex(json_encode(
             )
         ),
         'codigoTabelaIbpt' => 'ca7gi3',
-        'logomarcaEmitente' => 'logomaraGrande.jpg',
         'idVenda' => '0',
         'numeroNotaEmitir' => '48',
     )
