@@ -1,5 +1,5 @@
 <?php
-$urlIntegracao    = 'http://api.agilcontabil.net/nfe/cartaCorrecaoNfe';
+$urlIntegracao    = 'https://api.agilcontabil.net/nfe/cartaCorrecaoNfe';
 
 $dados['usuario']            = 'teste';
 $dados['senha']              = 'teste';

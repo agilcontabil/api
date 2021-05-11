@@ -1,5 +1,5 @@
 <?php
-$urlIntegracao    = 'http://api.agilcontabil.net/nfe/emitirNfe';
+$urlIntegracao    = 'https://api.agilcontabil.net/nfe/emitirNfe';
 
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';

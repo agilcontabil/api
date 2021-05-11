@@ -1,5 +1,5 @@
 <?php
-$urlIntegracao    = 'http://api.agilcontabil.net/nfse/emitirNfse';
+$urlIntegracao    = 'https://api.agilcontabil.net/nfse/emitirNfse';
 
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';

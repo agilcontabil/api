@@ -1,5 +1,5 @@
 <?php
-$urlIntegracao    = 'http://www.agilcontabil.net/sistemaInstalado/ajax';
+$urlIntegracao    = 'https://www.agilcontabil.net/sistemaInstalado/ajax';
 
 $dados['usuario']      = 'teste';
 $dados['senha']        = 'teste';

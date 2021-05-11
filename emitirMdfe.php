@@ -1,6 +1,5 @@
 <?php
-$urlIntegracao    = 'http://api.agilcontabil.net/mdfe/emitirMdfe';
-$urlIntegracao    = 'http://api.maisagil.test/mdfe/emitirMdfe';
+$urlIntegracao    = 'https://api.agilcontabil.net/mdfe/emitirMdfe';
 
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';

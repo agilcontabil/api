@@ -1,5 +1,5 @@
 <?php
-$urlIntegracao    = 'http://api.agilcontabil.net/nfe/manifestar';
+$urlIntegracao    = 'https://api.agilcontabil.net/nfe/manifestar';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 //para usar certificado A1 apenas descomentar os dados abaixo
