@@ -119,7 +119,7 @@ $dados["mdfe"] = bin2hex(
                 'informacaoComplementar' => '',
                 'cpfContador' => '',
                 'cnpjContador' => '',
-                'logomarca' => '',
+                'logomarca' => '', //enviar em formato hexadecimal
             ),
             'cliente' =>
             array(

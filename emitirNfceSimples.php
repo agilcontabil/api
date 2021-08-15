@@ -34,7 +34,8 @@ $dados["nfe"] = bin2hex(json_encode(
             'bairro' => 'Conjunto Urbanistico',
             'cep' => '77818773',
             'codigoRegimeTributario' => '1',
-            'informacaoComplementar' => ''
+            'informacaoComplementar' => '',
+            'logomarca' => '' //enviar em formato hexadecimal
         ),
         'cliente' =>
         array(
