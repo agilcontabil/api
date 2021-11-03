@@ -4,13 +4,13 @@ $urlIntegracao    = 'https://api.agilcontabil.net/nfe/baixarXmlExterno';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 
-//$dados['certificadoDigital'] = bin2hex(file_get_contents("C:\Users\billb\Downloads\hellen.pfx"));
-//$dados['senhaCertificadoDigital'] = '23101981';
+$dados['certificadoDigital'] = bin2hex(file_get_contents("324523452.pfx"));
+$dados['senhaCertificadoDigital'] = 'ertwertwr';
 
 //"dataInicio" => "01/01/2020"
 $dados["dados"] = bin2hex(json_encode([
-    "cnpj" => "26888917000168",
-    "ultimoNsu" => "8210"
+    "cnpj" => "39275310000154",
+    "ultimoNsu" => "9934"
 ]));
 
 //Inicia comunicação com servidor agilcontabil.net
