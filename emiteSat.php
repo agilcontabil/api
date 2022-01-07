@@ -78,5 +78,5 @@ print_r($arrayResposta);
 echo "</pre>";
 
 echo "<textarea cols=\"100\" rows=\"70\">";
-echo base64_decode($arrayResposta["xml"]);
+echo hex2bin($arrayResposta["xml"]);
 echo "</textarea>";
