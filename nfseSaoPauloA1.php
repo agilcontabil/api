@@ -12,6 +12,7 @@ $dados['senhaCertificado'] = "YJKmaa1894KLT";
 //dados da nota fiscal de serviços
 $nfse = [
   "numeroLote" => "5",
+  "numeroRps" => "5",
   "serie" => "NF",
   "ambiente" => "1", //1=produção, 2=homologação
   "simplesNacional" => "1", //1=sim, 2=não

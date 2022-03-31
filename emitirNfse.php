@@ -8,8 +8,8 @@ $dados['senha']   = 'teste';
 
 //dados da nota fiscal de serviços
 $nfse = [
-    "numeroRps" => "1846",
     "numeroLote" => "1846",
+    "numeroRps" => "1846",
     "serie" => "2",
     "ambiente" => "1", //1=produção, 2=homologação
     "simplesNacional" => "2", //1=sim, 2=não
