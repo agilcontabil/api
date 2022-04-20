@@ -212,6 +212,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'icmsStValor' => '0.00000000',
                 'icmsBcStRet' => '0.00000000',
                 'icmsStRetValor' => '0.00000000',
+                'icmsSubstitutoValor' => '0.00000000',
                 'ipiCst' => '',
                 'ipiBc' => '0.00000000',
                 'ipiAliquota' => '0.00000000',
