@@ -7,8 +7,8 @@ $dados['acao']    = 'emitirNfseA3';
 
 //dados da nota fiscal de serviços
 $nfse = [
-  "numeroLote" => "2",
-  "numeroRps" => "2",
+  "numeroLote" => "3",
+  "numeroRps" => "3",
   "serie" => "1",
   "ambiente" => "1", //1=produção, 2=homologação
   "simplesNacional" => "1", //1=sim, 2=não
