@@ -59,8 +59,8 @@ $nfse = [
     "nomeFantasia"       => "TESTE",
     "telefone"           => "",
     "email"              => "teste@teste.com",
-    "usuario"            => "222.482.798-92", //35744098000176",
-    "senha"              => "Messenger2013", //123",
+    "usuario"            => "", //35744098000176",
+    "senha"              => "", //123",
     "fraseSecreta"       => "",
     "codigoUf"           => "35"
   ],
