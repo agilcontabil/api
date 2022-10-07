@@ -46,7 +46,7 @@ $nfse = [
         "itemListaServico"      => "4.03",
         "codigoTributacaoMunicipio" => "40300188",
         "codigoCnae"            => "8630506",
-        "discriminacao"         => "Aplicacao",
+        "discriminacao"         => "Serviço",
         "codigoMunicipio"       => "3106200", //código do município onde ocorreu o fato gerador do serviço (geralmente o mesmo do prestador do serviço)
         "municipioIncidencia"   => "3106200",
         "exigibilidadeISS"      => 1 // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
