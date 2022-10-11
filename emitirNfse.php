@@ -42,7 +42,7 @@ $nfse = [
         "descontoIncondicionado" => 0.00,
         "descontoCondicionado"  => 0.00,
         "aliquota"              => 3.00,
-        "responsavelRetencao"   => 1, //1=ptTomador, 2=rtPrestador
+        "responsavelRetencao"   => 4, //1-rtTomador | 2-rtPrestador | 3-rtIntermediario | 4-rtNenhum
         "itemListaServico"      => "4.03",
         "codigoTributacaoMunicipio" => "40300188",
         "codigoCnae"            => "8630506",
