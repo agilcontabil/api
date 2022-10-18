@@ -3,11 +3,14 @@ $urlIntegracao    = 'https://api.agilcontabil.net/nfe/inutilizarNumeracaoNfe';
 
 $dados['usuario']      = 'teste';
 $dados['senha']        = 'teste';
+//para usar certificado A1 apenas descomentar os dados abaixo
+$dados['certificadoDigital'] = bin2hex(file_get_contents("./certificado.pfx"));
+$dados['senhaCertificadoDigital'] = '12345';
 
 $dados["dados"] = bin2hex(json_encode([
     "ambiente" => "2",
     "modelo" => "55",
-    "ano" => "2020",
+    "ano" => "2022",
     "ufEmitente" => "TO",
     "idCsc" => "",
     "csc" => "",
