@@ -62,6 +62,7 @@ $nfse = [
     "usuario"            => "", //35744098000176",
     "senha"              => "", //123",
     "fraseSecreta"       => "",
+    "chaveAcesso"        => "",
     "codigoUf"           => "35"
   ],
   "tomador" => [
