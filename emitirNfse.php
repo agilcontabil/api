@@ -28,6 +28,7 @@ $nfse = [
     //no981, no991  );    
     "codigoObra" => "",
     "codigoArt" => "",
+    "outrasInformacoes" => "EPP Optante do simples nacional...",
     "servico" => [
         "valor"                 => 1.00,
         "deducoes"              => 0.00,
