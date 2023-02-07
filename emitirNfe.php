@@ -238,7 +238,8 @@ $dados["nfe"] = bin2hex(json_encode(
                 'issRetido' => '',
                 'issIndicador' => '',
                 'issCodigoServico' => '',
-                'issIndicadorIncentivo' => ''
+                'issIndicadorIncentivo' => '',
+                'codigoBeneficio' => ''
             ),
         ),
         'fatura' =>
