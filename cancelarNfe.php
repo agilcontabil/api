@@ -10,6 +10,7 @@ $dados['senhaCertificadoDigital'] = '12345';
 $dados["dados"] = bin2hex(json_encode([
     "razaoSocial" => "Empresa Teste",
     "cnpj" => "26888917000168",
+    "cpf" => "26888917000168",
     "ambiente" => "2",
     "modelo" => "55",
     "ufEmitente" => "TO",
