@@ -53,19 +53,19 @@ $nfse = [
         "exigibilidadeISS"      => 1 // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
     ],
     "prestador" => [
-        "cnpj"               => "29320709000156",
+        "cnpj"               => "34345455454545",
         "inscricaoMunicipal" => "10600650011",
-        "endereco"           => "AVE DO CONTORNO",
-        "numero"             => "9495",
-        "complemento"        => "SALA 302",
-        "bairro"             => "Prado",
+        "endereco"           => "rua teste",
+        "numero"             => "243",
+        "complemento"        => "teste",
+        "bairro"             => "bairro teste",
         "municipio"          => "3106200",
         "uf"                 => "MG",
         "cep"                => "30110063",
-        "razaoSocial"        => "VACINE-SE CENTRO DE IMUNIZACOES E IMUNOTERAPIA LTDA",
-        "nomeFantasia"       => "VACINE-SE",
+        "razaoSocial"        => "Teste",
+        "nomeFantasia"       => "Teste",
         "telefone"           => "3133373124",
-        "email"              => "vacinese@vacine.se",
+        "email"              => "teste@teste.com",
         "usuario"            => "1234",
         "senha"              => "1234",
         "fraseSecreta"       => "",
@@ -75,16 +75,16 @@ $nfse = [
     "tomador" => [
         "cpfCnpj"            => "07729385635",
         "inscricaoMunicipal" => "",
-        "endereco"           => "RUA OESTE",
-        "numero"             => "241",
+        "endereco"           => "rua teste",
+        "numero"             => "4454",
         "complemento"        => "",
-        "bairro"             => "PRADO",
+        "bairro"             => "bairro teste",
         "municipio"          => "3106200",
         "uf"                 => "MG",
         "cep"                => "30411107",
-        "razaoSocial"        => "Bill Teste",
+        "razaoSocial"        => "Cliente Teste",
         "telefone"           => "",
-        "email"              => "alinecamargo@me.com"
+        "email"              => "teste@teste.com"
     ]
 ];
 
