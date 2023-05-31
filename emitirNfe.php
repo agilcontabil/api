@@ -140,6 +140,7 @@ $dados["nfe"] = bin2hex(json_encode(
             0 => ["cnpj" => '26888917000168'],
             1 => ["cpf" => "00863364101"]
         ],
+        'indicadorPresenca' => '9',
         'indicativoIntermediador' => '0',
         'numero' => '',
         'codigoNumerico' => '49028638',
