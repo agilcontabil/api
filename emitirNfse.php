@@ -91,7 +91,7 @@ $nfse = [
     ]
 ];
 
-$dados['dados'] = bin2hex(json_encode($nfse)); //os dados da nfse devem ser enviados em formato json e base64
+$dados['dados'] = bin2hex(json_encode($nfse)); //os dados da nfse devem ser enviados em formato json e hexadecimal
 
 //Inicia comunicação com servidor agilcontabil.net
 $ch = curl_init();
