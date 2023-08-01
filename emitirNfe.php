@@ -296,7 +296,6 @@ $dados["nfe"] = bin2hex(json_encode(
                 )
             )
         ),
-        'codigoTabelaIbpt' => 'ca7gi3',
         'idVenda' => '0',
         'numeroNotaEmitir' => '48',
     )
