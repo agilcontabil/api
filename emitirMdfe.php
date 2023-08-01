@@ -103,7 +103,6 @@ $dados["mdfe"] = bin2hex(
                 'modeloCertificadoDigital' => 'A1',
                 'versaoNfe' => '4.0',
                 'aliquotaIss' => '',
-                'ibptAutomatico' => 'nao',
                 'codigoRegimeTributarioIssqn' => '7',
                 'razaoSocial' => 'GERSON GENIR SCHUSTER',
                 'nomeFantasia' => 'FAZENDA ARARA AZUL',

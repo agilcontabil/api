@@ -71,14 +71,7 @@ $dados["nfe"] = bin2hex(json_encode(
             'versaoNfe' => '4.0',
             'contingencia' => 'nao',
             'aliquotaIss' => '',
-            'tokenIbpt' => '',
             'ibptAutomatico' => 'sim',
-            'impostoIbpt' => [
-                'nacionalFederal' => 10,
-                'estadual' => 8,
-                'importadosFederal' => 4,
-                'municipal' => 2
-            ],
             'codigoRegimeTributarioIssqn' => '7',
             'aliquotaInternaIcms' => '',
             'aliquotaInterestadualIcms' => '',
