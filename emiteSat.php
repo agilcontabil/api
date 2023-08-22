@@ -1,8 +1,8 @@
 <?php
 $urlIntegracao    = 'https://www.agilcontabil.net/sistemaInstalado/ajax';
 
-$dados['usuario'] = 'usuario';
-$dados['senha']   = 'senha';
+$dados['usuario'] = 'teste1';
+$dados['senha']   = 'teste1';
 $dados['acao']    = 'emitirCfe';
 
 //dados da nota fiscal de serviços
@@ -14,7 +14,8 @@ $cfe =  [
   "inscricaoEstadualEmitente" => "111111111111",
   "inscricaoMunicipalEmitente" => "",
   "regimeTributario" => "0", //(0 - RTSimplesNacional, 1 - RTRegimeNormal); 
-  "descontoFinal" => 0.00,
+  "descontoFinal" => 0.00, //desconto
+  "acrescimoFinal" => 0.00, //frete
   "troco" => 0.00,
   "informacaoComplementar" => "",
   "itens" => [
@@ -26,7 +27,24 @@ $cfe =  [
       "unidadeMedida"    => "UNID",
       "quantidade"       => 10,
       "precoUnitario"    => 2.50,
-      "desconto"         => 0.00
+      "desconto"         => 0.00,
+
+      'icmsCst'          => '102', // '101', '102', '103', '201', '202', '203', '300', '400', '500','900' 
+      // ou '00', '10', '20', '30', '40', '41', '45', '50', '51', '60', '70', 
+      // '80', '81', '90', '90', 'SN', '10', '90', '41', '60', '02', '15', '53', '61'
+      'icmsAliquota' => '0.00000000', // 12 para 12%
+      'icmsValor' => '0.00000000',
+
+      'pisCst' => '',
+      'pisBc' => '0.00000000',
+      'pisAliquota' => '0.00000000', // 0.65 para 6,5%
+      'pisValor' => '0.00000000',
+
+      'cofinsCst' => '',
+      'cofinsBc' => '0.00000000',
+      'cofinsAliquota' => '0.00000000', // 3 para 3% 
+      'cofinsValor' => '0.00000000',
+
     ]
   ],
   "parcelas" => [
@@ -80,3 +98,6 @@ echo "</pre>";
 echo "<textarea cols=\"100\" rows=\"70\">";
 echo hex2bin($arrayResposta["xml"]);
 echo "</textarea>";
+
+//mostra pdf na tela
+?><object data="data:application/pdf;base64,<?php echo base64_encode(hex2bin($arrayResposta["pdf"])); ?>" type="application/pdf" width="100%" height="800px"></object>
