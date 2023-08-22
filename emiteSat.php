@@ -1,8 +1,8 @@
 <?php
 $urlIntegracao    = 'https://www.agilcontabil.net/sistemaInstalado/ajax';
 
-$dados['usuario'] = 'teste1';
-$dados['senha']   = 'teste1';
+$dados['usuario'] = 'usuario';
+$dados['senha']   = 'senha';
 $dados['acao']    = 'emitirCfe';
 
 //dados da nota fiscal de serviços
