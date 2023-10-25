@@ -4,14 +4,15 @@ $urlIntegracao    = 'https://api.agilcontabil.net/nfse/cancelarNfse';
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
 
-//dados da nota fiscal de serviços
+//dados do cancelamento
 //"codigoCancelamento" =>"2", //1 - Erro de emissão, 2 - Serviço não concluido, 3 - RPS Cancelado na Emissão  
 //"codigoCancelamento" =>"E506",
-$xml = file_get_contents("zzteste-xmlnfse.xml");
+$xml = file_get_contents("zzteste-xmlnfse.xml"); //xml da nfse emitida
 $nfse = [
     "ambiente"           => "1", //1=produção, 2=homologação
     "xml"                => bin2hex($xml),
     "codigoCancelamento" => '2', //1 - Erro de emissão, 2 - Serviço não concluido, 3 - RPS Cancelado na Emissão (passo fundo)
+    "motivoCancelamento" => 'erro nos valores',
     "prestador" => [
         "cnpj"               => "29320709000156",
         "inscricaoMunicipal" => "10600650011",
