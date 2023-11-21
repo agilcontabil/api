@@ -239,7 +239,17 @@ $dados["nfe"] = bin2hex(json_encode(
                 'issIndicador' => '',
                 'issCodigoServico' => '',
                 'issIndicadorIncentivo' => '',
-                'codigoBeneficio' => ''
+                'codigoBeneficio' => '',
+
+                'vBCUFDest' => '', //Valor da BC do ICMS na UF do destinatário
+                'vBCFCPUFDest' => '', //Valor da BC do ICMS na UF do destinatário
+                'pFCPUFDest' => '', //Percentual do ICMS relativo ao Fundo de Combate à Pobreza (FCP) na UF de destino
+                'pICMSUFDest' => '', //Alíquota interna da UF do destinatário
+                'pICMSInter' => '', //Alíquota interestadual das UF envolvidas
+                'pICMSInterPart' => '', //Percentual provisório de partilha entre os Estados
+                'vFCPUFDest' => '', //Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP) da UF de destino
+                'vICMSUFDest' => '', //Valor do ICMS de partilha para a UF do destinatário
+                'vICMSUFRemet' => '', //Valor do ICMS de partilha para a UF do remetente
             ),
         ),
         'fatura' =>
