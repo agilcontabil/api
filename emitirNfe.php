@@ -42,7 +42,6 @@ $dados["nfe"] = bin2hex(json_encode(
         ),
         'empresa' =>
         array(
-            'id' => '39678831569137928',
             'cnpj' => '26888917000168',
             'cpf' => '',
             'inscricaoEstadual' => '290396719',
@@ -92,7 +91,6 @@ $dados["nfe"] = bin2hex(json_encode(
         ),
         'cliente' =>
         array(
-            'id' => '529604351509829594',
             'cnpj' => '',
             'cpf' => '00863364101',
             'inscricaoEstadual' => '',
@@ -180,7 +178,6 @@ $dados["nfe"] = bin2hex(json_encode(
                 'tipoItem' => '00',
                 'eanProduto' => '2005965311527',
                 'codigoProduto' => '1',
-                'idProduto' => '464007451587949468',
                 'nomeProduto' => 'Produto',
                 'cfop' => '5102',
                 'codigoAnp' => '',
