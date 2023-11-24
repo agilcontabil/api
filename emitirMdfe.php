@@ -180,7 +180,6 @@ $dados["mdfe"] = bin2hex(
             'naturezaOperacao' => '',
             'numeroVenda' => '',
             'usarValorTotalInformado' => '',
-            'chaveCarga' => '',
             'valorCarga' => '',
             'quantidadeCarga' => '',
             'unidadeMedida' => '',
