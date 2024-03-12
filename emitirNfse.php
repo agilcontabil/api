@@ -84,6 +84,7 @@ $nfse = [
         "municipio"          => "3106200",
         "nomeMunicipio"      => "Cidade teste",
         "uf"                 => "MG",
+        "codigoPais"         => "1058",
         "pais"               => "Brasil",
         "cep"                => "30411107",
         "razaoSocial"        => "Cliente Teste",
