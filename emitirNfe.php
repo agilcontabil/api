@@ -31,6 +31,7 @@ $dados["nfe"] = bin2hex(json_encode(
             array(
                 'quantidade' => '0',
                 'descricao' => '',
+                'marca'=> '',
                 'pesoLiquido' => '0.0000',
                 'pesoBruto' => '0.0000',
             ),
