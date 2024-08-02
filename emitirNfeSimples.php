@@ -73,7 +73,8 @@ $dados["nfe"] = bin2hex(json_encode(
         array(
             0 =>
             array(
-                'numeroItemPedido' => null, //ex: '1234'
+                'numeroPedido' => null,
+                'numeroItemPedido' => null,
                 'desconto' => '0.00000000',
                 'frete' => '0.00000000',
                 'outro' => '0.00000000',
