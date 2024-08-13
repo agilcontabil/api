@@ -182,9 +182,20 @@ $dados["nfe"] = bin2hex(json_encode(
                 'codigoProduto' => '1',
                 'nomeProduto' => 'Produto',
                 'cfop' => '5102',
-                'codigoAnp' => '',
-                'nomeAnp' => '',
-                'ufAnp' => '',
+
+                'codigoAnp' => '', //cProdANP
+                'nomeAnp' => '', //descANP
+                'ufAnp' => '', //UFCons
+                'pGLP' => '',
+                'pGNn' => '',
+                'pGNi' => '',
+                'vPart' => '',
+                'CODIF' => '',
+                'qTemp' => '',
+                'qBCProd' => '',
+                'vAliqProd' => '',
+                'vCIDE' => '',
+
                 'unidadeMedidaProduto' => 'UNID',
                 'origemProduto' => '0',
                 'diNumero' => '',
