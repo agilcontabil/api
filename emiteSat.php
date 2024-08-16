@@ -50,7 +50,7 @@ $cfe =  [
   "parcelas" => [
     0 =>
     [
-      "formaPagamento"     => 0, // 1-mpDinheiro | 2-mpCheque | 3-mpCartaodeCredito | 4-mpCartaodeDebito | 5-mpCreditoLoja | 6-mpValeAlimentacao | 7-mpValeRefeicao | 8-mpValePresente | 9-mpValeCombustivel | 10-mpBoletoBancario | 11-mpDepositoBancario | 12-mpPagamentoInstantaneo | 13-mpTransfBancario | 14-mpProgramaFidelidade | 15-mpSemPagamento | 16-mpOutros
+      "formaPagamento"     => 0, // 1-Dinheiro | 2-Cheque | 3-CartaodeCredito | 4-CartaodeDebito | 5-CreditoLoja | 6-ValeAlimentacao | 7-ValeRefeicao | 8-ValePresente | 9-ValeCombustivel | 10-BoletoBancario | 11-DepositoBancario | 12-PagamentoInstantaneo | 13-TransfBancario | 14-ProgramaFidelidade | 15-SemPagamento | 16-Outros
       "valor"              => 25.00
     ]
   ],
