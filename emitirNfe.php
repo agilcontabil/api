@@ -262,6 +262,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'vFCPUFDest' => '', //Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP) da UF de destino
                 'vICMSUFDest' => '', //Valor do ICMS de partilha para a UF do destinatário
                 'vICMSUFRemet' => '', //Valor do ICMS de partilha para a UF do remetente
+                'vTotTrib' => '', //Valor de tributos federais; estaduais e municipais
             ),
         ),
         'fatura' =>
