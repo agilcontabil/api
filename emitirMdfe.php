@@ -88,6 +88,7 @@ $dados["mdfe"] = bin2hex(
                 'nfseSenha' => '',
                 'nfseFraseSecreta' => '',
                 'nfseChaveAcesso' => '',
+                'nfseChaveAutorizacao' => '',
                 'nfseNumero' => '0',
                 'nfseSerie' => '',
                 'nfseLote' => '',

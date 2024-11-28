@@ -57,6 +57,7 @@ $dados["nfe"] = bin2hex(json_encode(
             'nfseSenha' => '',
             'nfseFraseSecreta' => '',
             'nfseChaveAcesso' => '',
+            'nfseChaveAutorizacao' => '',
             'nfseNumero' => '0',
             'nfseSerie' => '',
             'nfseLote' => '',

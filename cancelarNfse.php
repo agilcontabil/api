@@ -31,6 +31,7 @@ $nfse = [
         "senha"              => "1234",
         "fraseSecreta"       => "",
         "chaveAcesso"        => "",
+        "chaveAutorizacao"   => "",
         "codigoUf"           => "31"
     ]
 ];
