@@ -222,6 +222,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'ipiCst' => '',
                 'ipiBc' => '0.00000000',
                 'ipiAliquota' => '0.00000000',
+                'ipiEnquadramento' => '',
                 'ipiValor' => '0.00000000',
                 'ipiDevolucaoAliquota' => '0.00000000',
                 'ipiDevolucaoValor' => '0.00000000',
