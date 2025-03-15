@@ -10,6 +10,7 @@ $dados['senha']   = 'teste';
 $xml = file_get_contents("zzteste-xmlnfse.xml"); //xml da nfse emitida
 $nfse = [
     "ambiente"           => "1", //1=produção, 2=homologação
+    "padraoNacional"     => "nao",
     "xml"                => bin2hex($xml),
     "codigoCancelamento" => '2', //1 - Erro de emissão, 2 - Serviço não concluido, 3 - RPS Cancelado na Emissão (passo fundo)
     "motivoCancelamento" => 'erro nos valores',

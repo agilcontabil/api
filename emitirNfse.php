@@ -11,6 +11,7 @@ $nfse = [
     "numeroLote" => "1846",
     "numeroRps" => "1846",
     "serie" => "1",
+    "padraoNacional" => "nao",
     "ambiente" => "1", //1=produção, 2=homologação
     "simplesNacional" => "2", //1=sim, 2=não
     "regimeEspecialTributacao" => "1", //( retNenhum, retMicroempresaMunicipal, retEstimativa, retSociedadeProfissionais, retCooperativa, retMicroempresarioIndividual, retMicroempresarioEmpresaPP ); 
