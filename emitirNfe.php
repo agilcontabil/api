@@ -311,6 +311,8 @@ $dados["nfe"] = bin2hex(json_encode(
             'contato' => '', //Nome do responsavel tecnico
             'email' => '', //email do responsavel tecnico
             'fone' => '', //telefone do responsavel tecnico
+            'idCSRT' => '', //identificador do CSRT
+            'CSRT' => '', //codigo de seguranca do responsavel tecnico
         ],
         'idVenda' => '0',
         'numeroNotaEmitir' => '48',
