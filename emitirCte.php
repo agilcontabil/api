@@ -10,37 +10,6 @@ $dados['senhaCertificadoDigital'] = '12345';
 $dados["cte"] = bin2hex(
     json_encode(
         array(
-            'transportador' =>
-            array(
-                'cnpj' => '',
-                'cpf' => '',
-                'razaoSocial' => '',
-                'inscricaoEstadual' => '',
-                'endereco' => '',
-                'municipio' => '',
-                'uf' => '',
-            ),
-            'veiculo' =>
-            array(
-                'placa' => '',
-                'uf' => '',
-                'rntc' => '',
-            ),
-            'volumes' =>
-            array(
-                0 =>
-                array(
-                    'quantidade' => '',
-                    'descricao' => '',
-                    'pesoLiquido' => '',
-                    'pesoBruto' => '',
-                ),
-            ),
-            'exportacao' =>
-            array(
-                'ufEmbarque' => '',
-                'localEmbarque' => '',
-            ),
             'empresa' =>
             array(
                 'cnpj' => '12345678000190',
@@ -225,8 +194,6 @@ $dados["cte"] = bin2hex(
             'dataEntrega' => '2025-05-08 00:00:00',
             'dataEmissao' => '2025-05-08 06:20:22',
             'modelo' => '57',
-            'chave' => '',
-            'protocolo' => '',
             'ambiente' => '1',
             'tipo' => '1',
             'tipoServico' => '0',
@@ -236,11 +203,9 @@ $dados["cte"] = bin2hex(
             'informacaoComplementar' => 'R$ 2.600,00 FRETE + R$ 400,00 AJUDANTE FRETE- 22/04 UBERLANDIA - R$ 3.000,00 FRETE - 23/04 UBERLANDIA R$ 3.000,00',
             'notaFiscalReferencia' => '',
             'naturezaOperacao' => '5353 - Prestacao de servico de transporte a estabelecimento comercial',
-            'numeroVenda' => '',
-            'usarValorTotalInformado' => '',
             'valorCarga' => '2400.00',
             'quantidadeCarga' => '2400.0000',
-            'unidadeMedida' => '3',
+            'unidadeMedida' => '3', //00-M3; 01-KG; 02-TON; 03-UNIDADE; 04-LITROS; 05-MMBTU
             'valorTotal' => '800.00',
             'itensFrete' =>
             array(
@@ -268,8 +233,6 @@ $dados["cte"] = bin2hex(
                     'chave' => '31250410208566001139550010000175421189805510',
                 ),
             ),
-            'fatura' =>
-            array(),
             'numeroNotaEmitir' => '128',
             'impostos' =>
             array(
