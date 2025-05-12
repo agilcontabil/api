@@ -7,9 +7,10 @@ $dados['senha']   = 'teste';
 $dados['certificadoDigital'] = bin2hex(file_get_contents("C:\Users\billb\Downloads\hellen.pfx"));
 $dados['senhaCertificadoDigital'] = '23101981';
 
+//$dados["xml"] = bin2hex(file_get_contents("nfe.xml")); //caso ja tenha um xml pronto
+
 //a chave ["cliente"] pode ser totalmente removida caso não haja cliente na nota
 //ou pode ser informado apenas o CPF ou apenas nome e CPF se desejar
-
 $dados["nfe"] = bin2hex(json_encode(
     array(
         'empresa' =>
@@ -129,6 +130,20 @@ print_r(json_decode($resposta, false));
 echo "</pre>";
 
 $array = json_decode($resposta, true);
+
+/*
+ * Variáveis retornadas pela API após emissão da NFe:
+ * 
+ * $resposta - String JSON contendo:
+ *   - result: "sucesso" ou "erro"
+ *   - protocolo: Número do protocolo de autorização
+ *   - xml: XML da nota fiscal em formato hexadecimal
+ *   - pdf: PDF da nota fiscal em formato hexadecimal
+ *   - mensagem: Mensagem de retorno do SEFAZ
+ *   - cStat: Código de status da resposta
+ *   - chave: Chave de acesso da NFe
+ */
+
 $xml = hex2bin($array["xml"]);
 
 $dom = new DOMDocument();
