@@ -334,6 +334,18 @@ $resposta = curl_exec($ch);
 //finaliza comunicação
 curl_close($ch);
 
+//mostra a resposta da emissão da nota
+//o xml da nota fiscal emitida está dentro da variavel $resposta["xml"] e deve ser gravado em sua base de dados
+echo "<pre>";
+echo $resposta;
+echo "</pre>";
+
+echo "<pre>";
+print_r(json_decode($resposta, false));
+echo "</pre>";
+
+$array = json_decode($resposta, true);
+
 /*
  * Variáveis retornadas pela API após emissão da NFe:
  * 
@@ -347,17 +359,6 @@ curl_close($ch);
  *   - chave: Chave de acesso da NFe
  */
 
-//mostra a resposta da emissão da nota
-//o xml da nota fiscal emitida está dentro da variavel $resposta["xml"] e deve ser gravado em sua base de dados
-echo "<pre>";
-echo $resposta;
-echo "</pre>";
-
-echo "<pre>";
-print_r(json_decode($resposta, false));
-echo "</pre>";
-
-$array = json_decode($resposta, true);
 $xml = hex2bin($array["xml"]);
 
 $dom = new DOMDocument();
