@@ -33,4 +33,16 @@ curl_close($ch);
 //mostra a resposta do cancelamento da nota
 var_dump($resposta);
 $arrayResposta = json_decode($resposta, true); //transforma resposta json em array
+
+/*
+ * Variáveis retornadas pela API após cancelamento da NFe:
+ * 
+ * $resposta - String JSON contendo:
+ *   - result: "sucesso" ou "erro"
+ *   - mensagem: Mensagem de retorno do SEFAZ
+ *   - cStat: Código de status da resposta
+ *   - chave: Chave de acesso da NFe
+ *   - xml: XML do evento de cancelamento em formato hexadecimal
+ */
+
 print_r($arrayResposta);
