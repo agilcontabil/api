@@ -7,6 +7,8 @@ $dados['senha']   = 'teste';
 $dados['certificadoDigital'] = bin2hex(file_get_contents("C:\Users\billb\Downloads\hellen.pfx"));
 $dados['senhaCertificadoDigital'] = '23101981';
 
+//$dados["xml"] = bin2hex(file_get_contents("nfe.xml")); //caso ja tenha um xml pronto
+
 $dados["nfe"] = bin2hex(json_encode(
     array(
         'empresa' =>
