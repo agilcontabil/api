@@ -127,6 +127,20 @@ print_r(json_decode($resposta, false));
 echo "</pre>";
 
 $array = json_decode($resposta, true);
+
+/*
+ * Variáveis retornadas pela API após emissão da NFe:
+ * 
+ * $resposta - String JSON contendo:
+ *   - result: "sucesso" ou "erro"
+ *   - protocolo: Número do protocolo de autorização
+ *   - xml: XML da nota fiscal em formato hexadecimal
+ *   - pdf: PDF da nota fiscal em formato hexadecimal
+ *   - mensagem: Mensagem de retorno do SEFAZ
+ *   - cStat: Código de status da resposta
+ *   - chave: Chave de acesso da NFe
+ */
+
 $xml = hex2bin($array["xml"]);
 
 $dom = new DOMDocument();

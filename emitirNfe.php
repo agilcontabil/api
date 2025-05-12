@@ -334,6 +334,19 @@ $resposta = curl_exec($ch);
 //finaliza comunicação
 curl_close($ch);
 
+/*
+ * Variáveis retornadas pela API após emissão da NFe:
+ * 
+ * $resposta - String JSON contendo:
+ *   - result: "sucesso" ou "erro"
+ *   - protocolo: Número do protocolo de autorização
+ *   - xml: XML da nota fiscal em formato hexadecimal
+ *   - pdf: PDF da nota fiscal em formato hexadecimal
+ *   - mensagem: Mensagem de retorno do SEFAZ
+ *   - cStat: Código de status da resposta
+ *   - chave: Chave de acesso da NFe
+ */
+
 //mostra a resposta da emissão da nota
 //o xml da nota fiscal emitida está dentro da variavel $resposta["xml"] e deve ser gravado em sua base de dados
 echo "<pre>";
