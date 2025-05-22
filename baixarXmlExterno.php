@@ -28,7 +28,9 @@ curl_close($ch);
 
 //mostra a resposta da emissão da nota
 var_dump($resposta);
+
 $array = json_decode($resposta, true);
+
 echo "<pre>";
 var_dump($array);
 echo "</pre>";

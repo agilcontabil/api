@@ -361,14 +361,8 @@ $array = json_decode($resposta, true);
 
 $xml = hex2bin($array["xml"]);
 
-$dom = new DOMDocument();
-$dom->preserveWhiteSpace = false;
-$dom->formatOutput = true;
-$dom->loadXML($xml);
-$out = $dom->saveXML();
-
 echo "<pre>";
-print_r(htmlentities($out));
+echo $xml;
 echo "</pre>";
 
 //mostra pdf na tela
