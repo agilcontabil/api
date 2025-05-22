@@ -234,7 +234,10 @@ $dom->preserveWhiteSpace = false;
 $dom->formatOutput = true;
 $dom->loadXML($xml);
 $out = $dom->saveXML();
-pre(htmlentities($out));
+
+echo "<pre>";
+print_r(htmlentities($out));
+echo "</pre>";
 
 //mostra pdf na tela
 ?><object data="data:application/pdf;base64,<?php echo base64_encode(hex2bin($array["pdf"])); ?>" type="application/pdf" width="100%" height="800px"></object>
