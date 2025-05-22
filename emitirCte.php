@@ -224,16 +224,12 @@ $dados["cte"] = bin2hex(
             array(
                 0 =>
                 array(
-                    'chave' => '31250410208566001139550010000175421189805510',
-                    'tipo' => '',
-                    'descricao' => '',
-                    'numero' => '',
-                    'dataEmissao' => '', // 01/01/2025
-                    'modelo' => '',
-                    'ufDescargaItem' => '',
-                    'valor' => '',
-                    'peso' => '',
-                    'numeroAverbacao' => '',
+                    'chave' => '31250410208566001139550010000175421189805510', //deixar em branco para outros
+                    'tipo' => '99', //99 para outros
+                    'descricao' => 'Outros', //descrição do documento
+                    'numero' => '0000', //numero do documento
+                    'dataEmissao' => '01/01/2025', // 01/01/2025
+                    'valor' => '1000.00', //pode ser o valor da carga
                 ),
             ),
             'numeroNotaEmitir' => '128',
