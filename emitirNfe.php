@@ -21,12 +21,6 @@ $dados["nfe"] = bin2hex(json_encode(
             'municipio' => '',
             'uf' => '',
         ),
-        'veiculo' =>
-        array(
-            'placa' => '',
-            'uf' => '',
-            'rntc' => '',
-        ),
         'volumes' =>
         array(
             0 =>
