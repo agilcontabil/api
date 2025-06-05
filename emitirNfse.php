@@ -55,6 +55,7 @@ $nfse = [
         "exigibilidadeISS"      => 1 // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
     ],
     "prestador" => [
+        "logomarca"          => "", //binario de imagem jpeg ou png em hexadecimal
         "cnpj"               => "34345455454545",
         "inscricaoMunicipal" => "10600650011",
         "endereco"           => "rua teste",
