@@ -3,11 +3,10 @@ $urlIntegracao    = 'https://api.agilcontabil.net/nfe/cartaCorrecaoNfe';
 
 $dados['usuario']            = 'teste';
 $dados['senha']              = 'teste';
-//para usar certificado A1 apenas descomentar os dados abaixo
-//$dados['certificadoDigital'] = bin2hex(file_get_contents("/var/www/html/public/modulos/api/zzteste-certificadoHellen.pfx"));
-//$dados['senhaCertificadoDigital'] = '23101981';
-//echo var_export($dados);
-//die();
+//Enviar dados se for certificado A1, caso seja certificado A3, não enviar os dados abaixo
+$dados['certificadoDigital'] = bin2hex(file_get_contents("certificado.pfx"));
+$dados['senhaCertificadoDigital'] = '3434234';
+
 $dados["dados"] = bin2hex(json_encode([
     "razaoSocial" => "Hellen",
     "cnpj" => "26888917000168",

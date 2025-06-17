@@ -3,9 +3,11 @@ $urlIntegracao    = 'https://api.agilcontabil.net/nfse/cancelarNfse';
 
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
+//Enviar dados se for certificado A1, caso seja certificado A3, não enviar os dados abaixo
+$dados['certificadoDigital'] = bin2hex(file_get_contents("1234.pfx"));
+$dados['senhaCertificadoDigital'] = '12345';
 
 //dados do cancelamento
-//"codigoCancelamento" =>"2", //1 - Erro de emissão, 2 - Serviço não concluido, 3 - RPS Cancelado na Emissão  
 //"codigoCancelamento" =>"E506",
 $xml = file_get_contents("zzteste-xmlnfse.xml"); //xml da nfse emitida
 $nfse = [

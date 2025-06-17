@@ -3,8 +3,9 @@ $urlIntegracao    = 'https://api.agilcontabil.net/nfse/emitirNfse';
 
 $dados['usuario'] = 'teste';
 $dados['senha']   = 'teste';
-//$dados['certificadoDigital'] = bin2hex(file_get_contents("1234.pfx"));
-//$dados['senhaCertificadoDigital'] = '12345';
+//Enviar dados se for certificado A1, caso seja certificado A3, não enviar os dados abaixo
+$dados['certificadoDigital'] = bin2hex(file_get_contents("1234.pfx"));
+$dados['senhaCertificadoDigital'] = '12345';
 
 //dados da nota fiscal de serviços
 $nfse = [
