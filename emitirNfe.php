@@ -77,7 +77,6 @@ $dados["nfe"] = bin2hex(json_encode(
             'cpfContador' => '',
             'cnpjContador' => '',
             'logomarca' => '', //enviar em formato hexadecimal
-            'numeroNotaAtual' => '47',
         ),
         'cliente' =>
         array(
