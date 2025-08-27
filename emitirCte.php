@@ -153,7 +153,7 @@ $dados["cte"] = bin2hex(
                 'uf' => 'ES',
                 'aliquotaInternaIcms' => '',
                 'razaoSocial' => 'CLIENTE EXEMPLO COMERCIO & SERVICOS LTDA',
-                'nomeFantasia' => 'CLIENTE EXEMPLO',
+                'nomeFantasia' => 'CLIENTE EXEMPLO.',
                 'cep' => '29104455',
                 'codigoRegimeTributario' => '0',
             ),
