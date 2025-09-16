@@ -252,6 +252,18 @@ $dados["nfe"] = bin2hex(json_encode(
                 'vICMSUFDest' => '', //Valor do ICMS de partilha para a UF do destinatário
                 'vICMSUFRemet' => '', //Valor do ICMS de partilha para a UF do remetente
                 'vTotTrib' => '', //Valor de tributos federais; estaduais e municipais
+
+                // Reforma Tributária - IBS/CBS
+                'cstIbscbs' => '000', //CST do IBS/CBS (ex: 000, 010, 200, etc.)
+                'cClassTribIbscbs' => '000001', //Código de Classificação Tributária IBS/CBS (ex: 000001, 200010, etc.)
+                'aliquotaIbsUf' => '0.10000000', //Alíquota do IBS por UF (%)
+                'aliquotaIbsMun' => '0.20000000', //Alíquota do IBS Municipal (%)
+                'aliquotaCbs' => '0.30000000', //Alíquota da CBS (%)
+
+                // Reforma Tributária - IS (Imposto Seletivo)
+                'cstIs' => '000', //CST do IS (ex: 000, 010, 200, etc.)
+                'cClassTribIs' => '000001', //Código de Classificação Tributária IS (ex: 000001, 200010, etc.)
+                'aliquotaIs' => '0.04000000', //Alíquota do IS (%)
             ),
         ),
         'fatura' =>
