@@ -53,7 +53,17 @@ $nfse = [
         "discriminacao"         => "Serviço",
         "codigoMunicipio"       => "3106200", //código do município onde ocorreu o fato gerador do serviço (geralmente o mesmo do prestador do serviço)
         "municipioIncidencia"   => "3106200",
-        "exigibilidadeISS"      => 1 // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
+        "exigibilidadeISS"      => 1, // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
+        "tributacao" => [
+            "tributacaoMunicipal" => [
+                "percentualAliquota" => "", //Valor percentual da alíquota (ex: "2.00", "5.00") ou vazio "" para municípios conveniados
+                "tipoImunidade" => "0" //0=Nenhum, 1=Imunidade, 2=Patrimônio, 3=Templos, 4=Patrimônio Partidos, 5=Livros, 6=Fonogramas
+            ],
+            "tributacaoFederal" => [
+                "CST" => "01", //00=CST 00, 01=CST 01, 02=CST 02, 03=CST 03, 04=CST 04, 05=CST 05, 06=CST 06, 07=CST 07, 08=CST 08, 09=CST 09
+                "tipoRetencaoPisCofins" => "2" //1=Não Retido, 2=Retido
+            ]
+        ]
     ],
     "prestador" => [
         "logomarca"          => "", //binario de imagem jpeg ou png em hexadecimal
