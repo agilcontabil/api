@@ -249,6 +249,11 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_URL, $urlIntegracao);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($dados));
+curl_setopt($ch, CURLOPT_TIMEOUT, 90); // Timeout de 90 segundos
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30); // Timeout de conexão
+// Desabilita verificação SSL (apenas para desenvolvimento/teste)
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
 //recebe a resposta
 $resposta = curl_exec($ch);
