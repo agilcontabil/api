@@ -50,9 +50,23 @@ $nfse = [
         "codigoTributacaoMunicipio" => "40300188",
         "codigoLcServ"          => "4.03",
         "codigoCnae"            => "8630506",
+        "codigoClassificacaoTributaria" => "000001", //Código de Classificação Tributária (cClassTrib) - 6 dígitos numéricos
+        //Exemplos de códigos cClassTrib:
+        //"000001" = Tributação Integral (CST 000)
+        //"000002" = Exploração de via (CST 000)
+        //"000003" = Regime automotivo - projetos incentivados art. 311 (CST 000)
+        //"000004" = Regime automotivo - projetos incentivados art. 312 (CST 000)
+        //"010001" = Operações do FGTS não realizadas pela CEF (CST 010)
+        //"010002" = Operações do serviço financeiro (CST 010)
+        //"011001" = Planos de assistência funerária (CST 011)
+        //"011002" = Planos de assistência à saúde (CST 011)
+        //"011003" = Intermediação de planos de assistência à saúde (CST 011)
+        //"011004" = Concursos e prognósticos (CST 011)
+        //Consulte a tabela completa no Portal Nacional da NFSe (Nota Técnica 002/2025) para todos os códigos disponíveis
         "discriminacao"         => "Serviço",
         "codigoMunicipio"       => "3106200", //código do município onde ocorreu o fato gerador do serviço (geralmente o mesmo do prestador do serviço)
         "municipioIncidencia"   => "3106200",
+        "descricaoLocalidadeIncidencia" => "", //Descrição da localidade de incidência (ex: "Porto Alegre", "São Paulo")
         "exigibilidadeISS"      => 1, // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
         "tributacao" => [
             "tributacaoMunicipal" => [
@@ -62,6 +76,31 @@ $nfse = [
             "tributacaoFederal" => [
                 "CST" => "01", //00=CST 00, 01=CST 01, 02=CST 02, 03=CST 03, 04=CST 04, 05=CST 05, 06=CST 06, 07=CST 07, 08=CST 08, 09=CST 09
                 "tipoRetencaoPisCofins" => "2" //1=Não Retido, 2=Retido
+            ],
+            "ibscbs" => [
+                //IBS e CBS - Reforma Tributária (Lei Complementar 214/2025)
+                //Alíquotas de 2026: IBS Estadual 0,1%, IBS Municipal 0,0%, CBS 0,9%
+                "cst" => "000", //Código de Situação Tributária do IBS/CBS (ex: "000", "010", "011", "200", "210", "220")
+                //Valores possíveis do CST:
+                //"000" = Tributação integral
+                //"010" = Tributação com alíquotas uniformes (setor financeiro)
+                //"011" = Tributação com alíquotas uniformes reduzidas em 60%
+                //"200" = Alíquota zero
+                //"210" = Alíquota reduzida em 50% com redutor de base de cálculo
+                //"220" = Alíquota fixa
+                //Nota: O CST do IBS/CBS é usado apenas em DPS (Declaração de Prestação de Serviço), não na NFSe emitida
+                "ibsEstadual" => [
+                    "percentualIbs" => "0.10", //Alíquota do IBS Estadual (ex: 0.10 para 0,1% em 2026)
+                    "percentualReducaoAliquota" => "0.00" //Percentual de redução da alíquota (ex: 40.00 para redução de 40%)
+                ],
+                "ibsMunicipal" => [
+                    "percentualIbs" => "0.00", //Alíquota do IBS Municipal (ex: 0.00 para 2026, não aplicável)
+                    "percentualReducaoAliquota" => "0.00" //Percentual de redução da alíquota
+                ],
+                "cbsFederal" => [
+                    "percentualCbs" => "0.90", //Alíquota da CBS Federal (ex: 0.90 para 0,9% em 2026)
+                    "percentualReducaoAliquota" => "0.00" //Percentual de redução da alíquota
+                ]
             ]
         ]
     ],
