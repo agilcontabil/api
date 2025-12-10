@@ -34,8 +34,6 @@ $nfse = [
     "servico" => [
         "valor"                 => 1.00,
         "deducoes"              => 0.00,
-        "aliquotaPis"           => 0.00,
-        "aliquotaCofins"        => 0.00,
         "inss"                  => 0.00,
         "ir"                    => 0.00,
         "csll"                  => 0.00,
@@ -76,7 +74,10 @@ $nfse = [
             ],
             "tributacaoFederal" => [
                 "CST" => "01", //00=CST 00, 01=CST 01, 02=CST 02, 03=CST 03, 04=CST 04, 05=CST 05, 06=CST 06, 07=CST 07, 08=CST 08, 09=CST 09
-                "tipoRetencaoPisCofins" => "2" //1=Não Retido, 2=Retido
+                "tipoRetencaoPisCofins" => "2", //1=Não Retido, 2=Retido
+                "aliquotaPis" => "0.00",
+                "aliquotaCofins" => "0.00",
+                "baseCalculoPisCofins" => "1.00" //CSTs 07, 08, 09 e 49 geralmente não possuem base de cálculo (preencher com 0.00)
             ],
             "ibscbs" => [
                 //IBS e CBS - Reforma Tributária (Lei Complementar 214/2025)
