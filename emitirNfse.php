@@ -12,6 +12,7 @@ $nfse = [
     "numeroLote" => "1846",
     "numeroRps" => "1846",
     "serie" => "1",
+    "consultarAntesEnvio" => "sim", //"sim"=consulta numeroRps antes de emitir (retorna NFSe se já existir - mais lento), "nao"=não consulta numeroRps antes de emitir (pode retornar erro se ja existir - mais rapido)
     "padraoNacional" => "nao",
     "ambiente" => "1", //1=produção, 2=homologação
     "simplesNacional" => "2", //1=sim, 2=não
