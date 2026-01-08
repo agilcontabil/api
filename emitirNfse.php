@@ -70,7 +70,6 @@ $nfse = [
         "exigibilidadeISS"      => 1, // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
         "tributacao" => [
             "tributacaoMunicipal" => [
-                "percentualAliquota" => "", //Valor percentual da alíquota (ex: "2.00", "5.00") ou vazio "" para municípios conveniados
                 "tipoImunidade" => "0" //0=Nenhum, 1=Imunidade, 2=Patrimônio, 3=Templos, 4=Patrimônio Partidos, 5=Livros, 6=Fonogramas
             ],
             "tributacaoFederal" => [
