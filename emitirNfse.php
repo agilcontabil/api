@@ -69,6 +69,9 @@ $nfse = [
         "descricaoLocalidadeIncidencia" => "", //Descrição da localidade de incidência (ex: "Porto Alegre", "São Paulo")
         "exigibilidadeISS"      => 1, // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
         "tributacao" => [
+            // Padrão Nacional + Simples Nacional (padraoNacional=>"sim", simplesNacional=>"1"): informar percentual total de tributos no SN (pTotTribSN)
+            // Ex.: "2.00" para 2%, "8.75" para 8,75%. Se omitido, é calculado por (PIS+COFINS)/valorServicos*100
+            "percentualTributosSimplesNacional" => "2.00",
             "tributacaoMunicipal" => [
                 "tipoImunidade" => "0" //0=Nenhum, 1=Imunidade, 2=Patrimônio, 3=Templos, 4=Patrimônio Partidos, 5=Livros, 6=Fonogramas
             ],
