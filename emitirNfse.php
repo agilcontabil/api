@@ -73,14 +73,28 @@ $nfse = [
             // Ex.: "2.00" para 2%, "8.75" para 8,75%. Se omitido, é calculado por (PIS+COFINS)/valorServicos*100
             "percentualTributosSimplesNacional" => "2.00",
             "tributacaoMunicipal" => [
-                "tipoImunidade" => "0" //0=Nenhum, 1=Imunidade, 2=Patrimônio, 3=Templos, 4=Patrimônio Partidos, 5=Livros, 6=Fonogramas
+                "tipoImunidade" => "0", //0=Nenhum, 1=Imunidade, 2=Patrimônio, 3=Templos, 4=Patrimônio Partidos, 5=Livros, 6=Fonogramas
+                "valorAliquota" => "3.00"
+            ],
+            "totaisTributos" => [
+                "percentualTributosFederais" => "0.00",
+                "valorTributosFederais" => "0.00",
+                "percentualTributosEstaduais" => "0.00",
+                "valorTributosEstaduais" => "0.00",
+                "percentualTributosMunicipais" => "0.00",
+                "valorTributosMunicipais" => "0.00"
             ],
             "tributacaoFederal" => [
                 "CST" => "01", //00=CST 00, 01=CST 01, 02=CST 02, 03=CST 03, 04=CST 04, 05=CST 05, 06=CST 06, 07=CST 07, 08=CST 08, 09=CST 09
                 "tipoRetencaoPisCofins" => "2", //1=Não Retido, 2=Retido
                 "aliquotaPis" => "0.00",
                 "aliquotaCofins" => "0.00",
-                "baseCalculoPisCofins" => "1.00" //CSTs 07, 08, 09 e 49 geralmente não possuem base de cálculo (preencher com 0.00)
+                "valorPis" => "0.00",
+                "valorCofins" => "0.00",
+                "baseCalculoPisCofins" => "1.00", //CSTs 07, 08, 09 e 49 geralmente não possuem base de cálculo (preencher com 0.00)
+                "valorRetencaoCP" => "0.00",
+                "valorRetencaoIRRF" => "0.00",
+                "valorRetencaoCSLL" => "0.00"
             ],
             "ibscbs" => [
                 //IBS e CBS - Reforma Tributária (Lei Complementar 214/2025)
