@@ -100,6 +100,7 @@ $nfse = [
                 //IBS e CBS - Reforma Tributária (Lei Complementar 214/2025)
                 //Alíquotas de 2026: IBS Estadual 0,1%, IBS Municipal 0,0%, CBS 0,9%
                 "cst" => "000", //Código de Situação Tributária do IBS/CBS (ex: "000", "010", "011", "200", "210", "220")
+                "cIndOp" => "030101", //Código de Indicação de Operação - 6 dígitos. Correlação Item LC 116 x NBS (Anexo VIII). Ex.: "030101", "000000". Tabela: https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica
                 //Valores possíveis do CST:
                 //"000" = Tributação integral
                 //"010" = Tributação com alíquotas uniformes (setor financeiro)
