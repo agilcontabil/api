@@ -258,7 +258,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'cstIbscbs' => '000', // CST 000 = Tributação integral (básico)
                 'cClassTribIbscbs' => '000001', // cClassTrib 000001 = Situações tributadas integralmente pelo IBS e CBS
                 'aliquotaIbsUf' => '0.10000000', // Alíquota IBS competência UF (%) – padrão teste 0,1%
-                'aliquotaIbsMun' => '0.00000000', // Alíquota IBS Municipal (%) – 0 conforme solicitado
+                'aliquotaIbsMun' => '0.00000000', // Alíquota IBS Municipal (%) – 0
                 'aliquotaCbs' => '0.90000000', // Alíquota CBS (%) – padrão teste 0,9%
 
                 // Reforma Tributária - IS (Imposto Seletivo)
