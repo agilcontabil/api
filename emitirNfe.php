@@ -254,12 +254,12 @@ $dados["nfe"] = bin2hex(json_encode(
                 'vICMSUFRemet' => '', //Valor do ICMS de partilha para a UF do remetente
                 'vTotTrib' => '', //Valor de tributos federais; estaduais e municipais
 
-                // Reforma Tributária - IBS/CBS
-                'cstIbscbs' => '000', //CST do IBS/CBS (ex: 000, 010, 200, etc.)
-                'cClassTribIbscbs' => '000001', //Código de Classificação Tributária IBS/CBS (ex: 000001, 200010, etc.)
-                'aliquotaIbsUf' => '0.10000000', //Alíquota do IBS por UF (%)
-                'aliquotaIbsMun' => '0.20000000', //Alíquota do IBS Municipal (%)
-                'aliquotaCbs' => '0.30000000', //Alíquota da CBS (%)
+                // Reforma Tributária - IBS/CBS (LC 214/2025; período teste 2026: IBS 0,1% + CBS 0,9%)
+                'cstIbscbs' => '000', // CST 000 = Tributação integral (básico)
+                'cClassTribIbscbs' => '000001', // cClassTrib 000001 = Situações tributadas integralmente pelo IBS e CBS
+                'aliquotaIbsUf' => '0.10000000', // Alíquota IBS competência UF (%) – padrão teste 0,1%
+                'aliquotaIbsMun' => '0.00000000', // Alíquota IBS Municipal (%) – 0 conforme solicitado
+                'aliquotaCbs' => '0.90000000', // Alíquota CBS (%) – padrão teste 0,9%
 
                 // Reforma Tributária - IS (Imposto Seletivo)
                 'cstIs' => '000', //CST do IS (ex: 000, 010, 200, etc.)
