@@ -255,7 +255,6 @@ $dados["nfe"] = bin2hex(json_encode(
                 'vTotTrib' => '', //Valor de tributos federais; estaduais e municipais
 
                 // Retenções de impostos federais (gera <retTrib> no XML quando federaisRetido = 'sim')
-                // Pode ser informado fora de `itens[].impostos` (compatível com o padrão do exemplo da API).
                 'federaisRetido' => 'nao', // 'sim' para habilitar retenções na fonte
                 'aliquotaInss' => '0.00000000', // percentual INSS para ret. previdenciária (se > 0)
                 'aliquotaIrrf' => '0.00000000', // percentual IRRF (se > 0)
