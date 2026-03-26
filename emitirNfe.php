@@ -254,6 +254,13 @@ $dados["nfe"] = bin2hex(json_encode(
                 'vICMSUFRemet' => '', //Valor do ICMS de partilha para a UF do remetente
                 'vTotTrib' => '', //Valor de tributos federais; estaduais e municipais
 
+                // Retenções de impostos federais (gera <retTrib> no XML quando federaisRetido = 'sim')
+                // Pode ser informado fora de `itens[].impostos` (compatível com o padrão do exemplo da API).
+                'federaisRetido' => 'nao', // 'sim' para habilitar retenções na fonte
+                'aliquotaInss' => '0.00000000', // percentual INSS para ret. previdenciária (se > 0)
+                'aliquotaIrrf' => '0.00000000', // percentual IRRF (se > 0)
+                'aliquotaCsll' => '0.00000000', // percentual CSLL (se > 0)
+
                 // Reforma Tributária - IBS/CBS (LC 214/2025; período teste 2026: IBS 0,1% + CBS 0,9%)
                 'cstIbscbs' => '000', // CST 000 = Tributação integral (básico)
                 'cClassTribIbscbs' => '000001', // cClassTrib 000001 = Situações tributadas integralmente pelo IBS e CBS
