@@ -203,6 +203,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'icmsRedBc' => '0.00000000',
                 'icmsAliquota' => '0.00000000',
                 'icmsValor' => '0.00000000',
+                'icmsPDif' => '', // CST 51: Percentual de diferimento parcial (ex: 70.00 para 70%) - vICMSDif é calculado automaticamente
                 'icmsModBcSt' => '',
                 'icmsMva' => '0.00000000',
                 'icmsRedBcSt' => '0.00000000',
