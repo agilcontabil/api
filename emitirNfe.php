@@ -171,6 +171,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'codigoProduto' => '1',
                 'nomeProduto' => 'Produto',
                 'cfop' => '5102',
+                'abaterIcmsBcPisCofins' => 'nao', // use 'sim' para excluir o ICMS da base do PIS/COFINS no cálculo automático
 
                 'codigoAnp' => '', //cProdANP
                 'nomeAnp' => '', //descANP
