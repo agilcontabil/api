@@ -139,7 +139,7 @@ $dados["nfe"] = bin2hex(json_encode(
         'ambiente' => '2',
         'tipo' => '1',
         'frete' => '9',
-        'finalidade' => '1',
+        'finalidade' => '1', // Em devolução use '4' e informe a referência em cada item.
         'informacaoAdicionalFisco' => '',
         'informacaoComplementar' => 'teste de informacoes complementares (cadastro da empresa...)',
         'notaFiscalReferencia' => '',
@@ -154,6 +154,8 @@ $dados["nfe"] = bin2hex(json_encode(
             array(
                 'numeroPedido' => null,
                 'numeroItemPedido' => null,
+                'chaveNotaFiscalReferencia' => '', // Em devolução: chave de acesso da NF-e original, com 44 dígitos.
+                'numeroItemNotaFiscalReferencia' => '', // Em devolução: nItem correspondente na NF-e original, de 1 a 990.
                 'desconto' => '0.00000000',
                 'frete' => '0.00000000',
                 'seguro' => '0.00000000',
