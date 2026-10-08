@@ -14,8 +14,12 @@ $nfse = [
     "serie" => "1",
     "consultarAntesEnvio" => "sim", //"sim"=consulta numeroRps antes de emitir (retorna NFSe se já existir - mais lento), "nao"=não consulta numeroRps antes de emitir (pode retornar erro se ja existir - mais rapido)
     "padraoNacional" => "nao",
+    "dataEmissao" => "", // Opcional: ISO 8601 ou dd/mm/aaaa; vazio usa a data atual.
+    "dataEmissaoRps" => "",
+    "dataCompetencia" => "", // Vazio acompanha a emissao; nao pode ser posterior a ela.
     "ambiente" => "1", //1=produção, 2=homologação
     "simplesNacional" => "2", //1=sim, 2=não
+    // No padrao nacional, ME/EPP pode informar "regimeApuracaoSN" => "1", "2" ou "3".
     "regimeEspecialTributacao" => "1", //( retNenhum, retMicroempresaMunicipal, retEstimativa, retSociedadeProfissionais, retCooperativa, retMicroempresarioIndividual, retMicroempresarioEmpresaPP ); 
     "incentivadorCultural" => "2", //( snSim, snNao );
     "tipo" => "1", //( trRPS, trNFConjugada, trCupom );    
@@ -47,6 +51,7 @@ $nfse = [
         "responsavelRetencao"   => 4, //1-rtTomador | 2-rtPrestador | 3-rtIntermediario | 4-rtNenhum
         "itemListaServico"      => "4.03",
         "codigoTributacaoMunicipio" => "40300188",
+        "codigoServicoNacional" => "", // Codigo nacional de seis digitos, separado do codigo municipal.
         "codigoLcServ"          => "4.03",
         "codigoCnae"            => "8630506",
         "codigoNBS"             => "125060000",
@@ -70,7 +75,7 @@ $nfse = [
         "exigibilidadeISS"      => 1, // 1=exiExigivel, 2=exiNaoIncidencia, 3=exiIsencao, 4=exiExportacao, 5=exiImunidade, 6=exiSuspensaDecisaoJudicial, 7=exiSuspensaProcessoAdministrativo
         "tributacao" => [
             // Padrão Nacional + Simples Nacional (padraoNacional=>"sim", simplesNacional=>"1"): informar percentual total de tributos no SN (pTotTribSN)
-            // Ex.: "2.00" para 2%, "8.75" para 8,75%. Se omitido, é calculado por (PIS+COFINS)/valorServicos*100
+            // Ex.: "2.00" para 2%, "8.75" para 8,75%. Informar o percentual da empresa; nao e deduzido de PIS/COFINS.
             "percentualTributosSimplesNacional" => "2.00",
             "tributacaoMunicipal" => [
                 "tipoImunidade" => "0", //0=Nenhum, 1=Imunidade, 2=Patrimônio, 3=Templos, 4=Patrimônio Partidos, 5=Livros, 6=Fonogramas
@@ -86,7 +91,7 @@ $nfse = [
             ],
             "tributacaoFederal" => [
                 "CST" => "01", //00=CST 00, 01=CST 01, 02=CST 02, 03=CST 03, 04=CST 04, 05=CST 05, 06=CST 06, 07=CST 07, 08=CST 08, 09=CST 09
-                "tipoRetencaoPisCofins" => "2", //1=Não Retido, 2=Retido
+                "tipoRetencaoPisCofins" => "2", //1=Retido, 2=Nao Retido; 0=Nao Retidos PIS/COFINS/CSLL.
                 "aliquotaPis" => "0.00",
                 "aliquotaCofins" => "0.00",
                 "valorPis" => "0.00",
@@ -97,6 +102,9 @@ $nfse = [
                 "valorRetencaoCSLL" => "0.00"
             ],
             "ibscbs" => [
+                // Grupo opcional: omitir "ibscbs" quando nao aplicavel.
+                // Dados adicionais opcionais: tpEnteGov, dest, imovel, gRefNFSe,
+                // valores.trib.gIBSCBS.gTribRegular, gDif e valores.gReeRepRes.documentos.
                 //IBS e CBS - Reforma Tributária (Lei Complementar 214/2025)
                 //Alíquotas de 2026: IBS Estadual 0,1%, IBS Municipal 0,0%, CBS 0,9%
                 "cst" => "000", //Código de Situação Tributária do IBS/CBS (ex: "000", "010", "011", "200", "210", "220")

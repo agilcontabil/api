@@ -14,7 +14,7 @@ $nfse = [
     "ambiente"           => "1", //1=produção, 2=homologação
     "padraoNacional"     => "nao",
     "xml"                => bin2hex($xml),
-    "codigoCancelamento" => '2', //1 - Erro de emissão, 2 - Serviço não concluido, 3 - RPS Cancelado na Emissão (passo fundo)
+    "codigoCancelamento" => '2', // Opcional conforme provedor. Nacional: 1=erro de emissao, 2=servico nao concluido.
     "motivoCancelamento" => 'erro nos valores',
     "prestador" => [
         "cnpj"               => "29320709000156",

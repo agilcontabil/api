@@ -140,6 +140,8 @@ $dados["nfe"] = bin2hex(json_encode(
         'tipo' => '1',
         'frete' => '9',
         'finalidade' => '1', // Em devolução use '4' e informe a referência em cada item.
+        // Finalidade 5: tipoNotaCredito de 01 a 06; finalidade 6: tipoNotaDebito de 01 a 08.
+        // Em nota de debito: notasFiscaisPagamentoAntecipado pode conter uma lista de chaves.
         'informacaoAdicionalFisco' => '',
         'informacaoComplementar' => 'teste de informacoes complementares (cadastro da empresa...)',
         'notaFiscalReferencia' => '',
@@ -189,6 +191,9 @@ $dados["nfe"] = bin2hex(json_encode(
                 'vCIDE' => '',
 
                 'unidadeMedidaProduto' => 'UNID',
+                'unidadeTributavel' => '', // Opcional; vazio preserva a unidade comercial.
+                'quantidadeTributavel' => '',
+                'valorUnitarioTributavel' => '',
                 'origemProduto' => '0',
                 'diNumero' => '',
                 'diData' => '',
@@ -217,6 +222,7 @@ $dados["nfe"] = bin2hex(json_encode(
                 'icmsBcStRet' => '0.00000000',
                 'icmsStRetValor' => '0.00000000',
                 'icmsSubstitutoValor' => '0.00000000',
+                // Para CST 61: informar qBCMonoRet, adRemICMSRet e vICMSMonoRet por item.
                 'icmsMotivoDesoneracao' => '',
                 'icmsValorDesonerado' => '0.00000000',
                 'ipiCst' => '',
@@ -271,6 +277,11 @@ $dados["nfe"] = bin2hex(json_encode(
                 'aliquotaIbsMun' => '0.00000000', // Alíquota IBS Municipal (%) – 0
                 'aliquotaCbs' => '0.90000000', // Alíquota CBS (%) – padrão teste 0,9%
 
+                'baseCalculoIbscbs' => '', // Opcional; vazio preserva a base comercial.
+                'pRedAliqIbsUf' => '0.00',
+                'pRedAliqIbsMun' => '0.00',
+                'pRedAliqCbs' => '0.00',
+
                 // Reforma Tributária - IS (Imposto Seletivo)
                 'cstIs' => '000', //CST do IS (ex: 000, 010, 200, etc.)
                 'cClassTribIs' => '000001', //Código de Classificação Tributária IS (ex: 000001, 200010, etc.)
@@ -310,6 +321,7 @@ $dados["nfe"] = bin2hex(json_encode(
                     'cnpjCredenciadora' => '05577343000137',
                     'tipoBandeira' => '02', //01=Visa | 02=Mastercard | 03=American Express | 04=Sorocred | 05=Diners Club | 06=Elo | 07=Hipercard | 08=Aura | 09=Cabal | 99=Outros
                     'autorizacao' => '20010afsct',
+                    'identificadorTerminalPagamento' => '', // Opcional: maximo 40 caracteres.
                     'tipoIntegracao' => '2', //1 - integrado (TEF) | 2 - não integrado (POS)
                     'indicadorPagamento' => '0', // 0=Pagamento à Vista | 1=Pagamento à Prazo
                 ),
